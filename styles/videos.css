@@ -1,4 +1,8 @@
 .video {
   width: 100%;
+  border: 2px solid #ffffff;
 }
 
+article h3 {
+  color: #f7591d;
+}

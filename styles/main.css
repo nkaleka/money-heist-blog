@@ -37,9 +37,9 @@ nav ul li {
 nav ul li ul {
   position: absolute;
   background-color: #7a8080;
- display: none;
- margin-left: 3rem;
- padding-left: 0;
+  display: none;
+  margin-left: 3rem;
+  padding-left: 0;
   text-align: left;
 }
 
@@ -152,18 +152,18 @@ main img {
 }
 
 .leftAside figure {
-    padding: 1rem;
-    border-radius: 1rem;;
-    margin: 1rem;
-    font-weight: 700;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin: 1rem;
+  font-weight: 700;
 }
 
 .leftAside figure:hover {
-    background-color: #fde7ad;
-    color: #000;
+  background-color: #fde7ad;
+  color: #000;
 }
 
 .active {
-    background-color: #fec356;
-    color: #000;
+  background-color: #fec356;
+  color: #000;
 }
