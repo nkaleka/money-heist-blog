@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/feedback.css" />
     <title>Contact</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
@@ -83,37 +84,83 @@
       </aside>
       <main class="mainContent">
         <h2>Welcome to Feedback page</h2>
+        <form>
+          <article>
+            <div class="field">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="userName" class="input" />
+            </div>
+            <div class="field">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" class="input" />
+            </div>
+            <div class="field">
+              <label for="character">Choose your favourite character:</label>
+              <select name="character" id="character" class="input">
+                <optgroup label="Robbers">
+                  <option value="professor">The Professor</option>
+                  <option value="berlin">Berlin</option>
+                  <option value="polermo">Polermo</option>
+                </optgroup>
+                <optgroup label="Police">
+                  <option value="alicia">Alicia Sierra</option>
+                  <option value="Raquel">Raquel Murillo</option>
+                  <option value="prieto">Prieto</option>
+                </optgroup>
+              </select>
+            </div>
+            <div class="field">
+              <label for="actor">Which Character/Characters do you like:</label>
+              <select name="actor" id="actor" multiple class="input">
+                <option value="professor">The Professor</option>
+                <option value="berlin">Berlin</option>
+                <option value="polermo">Polermo</option>
+                <option value="alicia">Alicia Sierra</option>
+                <option value="Raquel">Raquel Murillo</option>
+                <option value="prieto">Prieto</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="comment">Comment:</label>
+              <textarea
+                name="userComment"
+                id="comment"
+                cols="50"
+                rows="7"
+                class="input"
+              ></textarea>
+            </div>
+            <input class="button" type="reset" value="RESET" />
+          </article>
+        </form>
       </main>
       <aside class="rightAside">
-        <p>More Information can be found on following links:</p>
-        <ul>
-          <li>
-            <a href="https://en.wikipedia.org/wiki/Money_Heist" target="_blank"
-              >Money Heist</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://money-heist.fandom.com/wiki/Category:Characters"
-              target="_blank"
-              >Characters</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://money-heist.fandom.com/wiki/Category:Episodes"
-              target="_blank"
-              >Episodes</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://money-heist.fandom.com/wiki/Category:Locations"
-              target="_blank"
-              >Shooting Locations</a
-            >
-          </li>
-        </ul>
+        <p>Please give your feedback, it is important to us:</p>
+        <p>My website is:</p>
+        <div class="checkbox">
+          <div>
+            <input type="checkbox" name="checkbox" id="checkbox" />
+            <label for="checkbox">Fun to visit</label>
+          </div>
+          <div>
+            <input type="checkbox" name="checkbox" id="checkbox" />
+            <label for="checkbox">Well designed</label>
+          </div>
+          <div>
+            <input type="checkbox" name="checkbox" id="checkbox" />
+            <label for="checkbox">Used good colors</label>
+          </div>
+        </div>
+        <legend>Will you visit my Site Again</legend>
+        <div>
+          <input type="radio" name="size" id="small" />
+          <label for="small">Yes</label>
+        </div>
+        <div>
+          <input type="radio" name="size" id="medium" />
+          <label for="medium">No</label>
+        </div>
+        <form></form>
       </aside>
     </div>
     <footer>
